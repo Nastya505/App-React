@@ -1,0 +1,13 @@
+import About from "../pages/About";
+import PostIdPage from "../pages/PostIdPage";
+import Posts from "../pages/Posts";
+import Login from "../pages/Login";
+
+export  const privateRoutes = [
+    {path: '/about', element: <About/>, exact: true},
+    {path: '/post', element: <Posts/>, exact: true},
+    {path: '/post/:id', element: <PostIdPage/>, exact: true},
+]
+export  const publicRoutes = [
+    {path: '/login', element: <Login/>, exact: true},
+]
