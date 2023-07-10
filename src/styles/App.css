@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: rgb(59, 59, 59);
+    color: #fff;
+}
 #root{
     display: flex;
     flex-direction: column;
@@ -14,7 +18,8 @@
 .post{
     display: flex;
     padding: 15px;
-    border: 2px solid teal;
+    border: 2px solid orange;
+    border-radius: 10px;
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
@@ -49,23 +54,40 @@
 }
 .page{
     padding: 10px;
-    border: 1px solid teal;
+    border: 1px solid orange;
     cursor: pointer;
 }
 .page__current{
     border: 2px solid orange;
+    background-color: orange;
+    color: #fff;
     font-weight: bold;
 }
 
+/*NAVBAR*/
 .navbar{
-     height: 50px;
+    height: 50px;
     width: 100%;
     padding: 0 15px;
     display: flex;
     align-items: center;
-    background-color: lightcyan;
+    background-color: black;
 
 }
 .navbar__links{
   margin-left: auto ;
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+.navbar__link{
+    text-decoration: none;
+    color: rgb(253, 166, 4);
+    font-size: 20px;
+    font-weight: bold;
+    transition:  font-size .5s;
+}
+
+.navbar__link:hover{
+    font-size: 18px;
 }

@@ -4,6 +4,7 @@ import { useFetching } from "../components/hooks/useFetching";
 import PostService from "../API/PostService";
 import Loader from "../components/UI/loader/Loader";
 
+
 const PostIdPage = () => {
     const params = useParams()
     const [post, setPost] = useState({});
@@ -23,13 +24,13 @@ const PostIdPage = () => {
     }, [])
     
     return (
-        <div>
-            <h1>Вы открыли страницу поста c ID = {params.id}</h1>
-            {isLoading
+        <div style={{ maxWidth: '800px', height: 'auto'}}>
+            <h1 style={{marginTop: '50px'}}>Вы открыли страницу поста c ID = {params.id}</h1>
+            {isLoading 
                 ? <Loader/>
                 :  <div>{post.id}. {post.title}</div>
             }
-            <h1>
+            <h1 style={{marginTop: '50px'}}> 
                 Комментарии
             </h1>
             {isComLoading

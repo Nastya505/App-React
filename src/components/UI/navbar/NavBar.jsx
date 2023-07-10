@@ -16,8 +16,8 @@ const NavBar = () => {
       <div className="navbar">
         <MyButton onClick={logOut}>Log out</MyButton>
         <div className="navbar__links">
-          <Link to="/about">About</Link>
-          <Link to="/post">Posts</Link>
+          <Link className="navbar__link" to="/about">About</Link>
+          <Link className="navbar__link" to="/post">Posts</Link>
         </div>
       </div>
   )

@@ -19,7 +19,7 @@ const Login = () => {
             <form onSubmit={login}>
                 <MyInput type="text" placeholder="Login"/>
                 <MyInput type="password" placeholder="Pass"/>
-                <MyButton>sig in</MyButton>
+                <MyButton>sign in</MyButton>
             </form>
         </div>
     )
